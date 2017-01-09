@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NUnit.Framework;
 
 namespace Samples
 {
+    [TestFixture]
     public class Tests
     {
+        [Test]
+        public void SuccessTest()
+        {
+            Assert.AreEqual(1, 1);
+        }
+
+        [Test]
+        public void SuccessTestWithAssert()
+        {
+            Assert.Pass();
+        }
     }
 }
